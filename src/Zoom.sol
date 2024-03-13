@@ -12,8 +12,8 @@ contract Zoom is ERC20, Ownable {
 
     error PoolNotMadeYet();
 
-    constructor(string memory name_, string memory symbol_) ERC20(name_, symbol_) Ownable(msg.sender) {
-        _mint(msg.sender, 100000 ether);
+    constructor(string memory name_, string memory symbol_, uint256 initalMintAmount_) ERC20(name_, symbol_) Ownable(msg.sender) {
+        _mint(msg.sender, initalMintAmount_);
     }
 
     /**
