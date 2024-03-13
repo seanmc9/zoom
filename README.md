@@ -1,6 +1,6 @@
 ## Zoom
 
-A token that goes Zoom.
+A token that goes zoom.
 
 Steps:
 1. Deploy.
