@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-only
-pragma solidity ^0.8.24;
+pragma solidity ^0.8.19;
 
 import "@openzeppelin/token/ERC20/ERC20.sol";
 import "@openzeppelin/access/Ownable.sol";
@@ -12,7 +12,7 @@ contract Zoom is ERC20, Ownable {
 
     error PoolNotMadeYet();
 
-    constructor(string memory name_, string memory symbol_, uint256 initalMintAmount_) ERC20(name_, symbol_) Ownable(msg.sender) {
+    constructor(string memory name_, string memory symbol_, uint256 initalMintAmount_) ERC20(name_, symbol_) Ownable() {
         _mint(msg.sender, initalMintAmount_);
     }
 
