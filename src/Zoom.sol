@@ -17,7 +17,7 @@ contract Zoom is ERC20, Ownable {
     }
 
     /**
-     * @dev This pool needs to have this contract's token as token1, and the native asset to the chain as token0.
+     * @dev This pool needs to have this contract's token as token1, and the native asset of the chain as token0.
      */
     function setPool(IUniswapV3Pool pool_) public onlyOwner {
         pool = pool_;
